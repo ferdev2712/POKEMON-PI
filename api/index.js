@@ -22,9 +22,9 @@ const { conn } = require('./src/db.js');
 const {getApiDataTypes} = require('./src/routes/utils')
 
 // Syncing all the models at once.
-conn.sync({ force: true }).then(() => {
-  server.listen(3001, () => {
+conn.sync({ force: false }).then(() => {
+  server.listen(process.env.PORT, () => {
     getApiDataTypes()
-    console.log('%s listening at 3001'); // eslint-disable-line no-console
+    console.log(`%s listening at ${process.env.PORT}`); // eslint-disable-line no-console
   });
 });

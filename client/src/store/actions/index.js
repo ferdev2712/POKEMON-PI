@@ -13,7 +13,7 @@ export const AXIOS_ERROR = "AXIOS_ERROR"
 
 export function getPokemons() {
     return function(dispatch){
-        axios.get("http://localhost:3001/pokemons/")
+        axios.get("/pokemons/")
         .then((pokemons) => {
             pokemons.data.forEach(pokemon => {
                if(pokemon.types[0].hasOwnProperty('name')){
@@ -33,7 +33,7 @@ export function getPokemons() {
 
 export function getTypes() {
     return function(dispatch){
-        axios.get("http://localhost:3001/types/")
+        axios.get("/types/")
         .then((types) => {
             let allTypes = types.data.map(type=>type.name)
             dispatch({
@@ -46,7 +46,7 @@ export function getTypes() {
 
 export function searchPokemons(name){
     return function(dispatch){
-        axios.get(`http://localhost:3001/pokemons/?name=${name}`)
+        axios.get(`/pokemons/?name=${name}`)
         .then((pokemons) => {
             dispatch({
                 type: SEARCH_POKEMONS,
@@ -61,7 +61,7 @@ export function searchPokemons(name){
 
 export function addPokemons(info){
     return function(dispatch){
-        axios.post("http://localhost:3001/pokemons/", info)
+        axios.post("/pokemons/", info)
         .then((pokemon) => {
             dispatch({
                 type: ADD_POKEMON,
@@ -73,7 +73,7 @@ export function addPokemons(info){
 
 export function pokemonDetail(id){
     return function(dispatch){
-        axios.get(`http://localhost:3001/pokemons/${id}`)
+        axios.get(`/pokemons/${id}`)
         .then((pokemon) =>{
             dispatch({
                 type: POKEMON_DETAIL,
