@@ -1,0 +1,28 @@
+.axiosErrorDetailContainer{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    position: relative;
+}
+
+.axiosErrorDetailImage{
+    width: 300px;
+    height: 300px;
+    margin-top: 60px;
+    position: relative;
+}
+
+.axiosErrorDetailTitle{
+    position: absolute;
+    background-color: #c90001;
+    width: auto;
+    height: auto;
+    top: 170px;
+    right: -30;
+    font-size: 25px;
+    padding: 5px;
+    border-radius: 10px;
+    border: 1px inset #3f3025;
+    text-shadow: 1px 0 #3f3025, 2px 0 #3f3025, 0 2px #3f3025, 0 1px #3f3025;
+    box-shadow: 2px 2px 20px #3f3025;
+}

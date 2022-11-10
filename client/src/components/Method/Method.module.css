@@ -1,0 +1,12 @@
+.methodContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-evenly;
+}
+
+@media screen and (max-width: 1200px){
+    .methodContainer{
+        flex-direction: column;
+        justify-items: center;
+    }
+}

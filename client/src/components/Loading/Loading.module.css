@@ -1,0 +1,21 @@
+.loadingContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.loadingContainer img{
+    margin-top: 170px ;
+    width: 200px;
+    height: 200px;
+}
+
+/* .container h3{
+    background-color: #f8ec99;
+    padding: 8px ;
+    border-radius: 10px;
+    border: 0.5px inset #3f3025;
+    text-shadow: 1px 0 #3f3025, 2px 0 #3f3025, 0 2px #3f3025, 0 1px #3f3025;
+    box-shadow: 1px 1px 15px #3f3025;
+} */

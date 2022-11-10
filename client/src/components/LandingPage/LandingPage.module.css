@@ -1,0 +1,63 @@
+body{
+    background-image: url("../../images/641968.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color:  #fbfbfb;
+}
+
+.landingContainer{
+    width: 90%;
+    display: flex;
+    margin: auto auto 10px;
+    justify-content: center;
+    justify-content: space-around;
+    align-items: center;
+    border: none;
+    flex-direction: column;
+    padding: 5px 7px;
+}
+
+.landingTitle{
+    text-shadow: -1px 0 #3f3025, 2px 0 #3f3025, 0 2px #3f3025, 0 -1px #3f3025;
+    font-size: 50px;
+}
+
+.LandingP{
+    font-size: 30px;
+    font-weight: bold;
+    text-shadow: -1px 0 #3f3025, 2px 0 #3f3025, 0 2px #3f3025, 0 -1px #3f3025;
+
+}
+
+
+.landingButton{
+    background-color: #f8ec99;
+    color: #3f3025;
+    box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.3);
+    border: 1px solid #3f3025;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 7px 10px;
+    justify-self: center;
+    height: 50px;
+    width: 80px;
+    border-radius: 10px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.landingButton:hover{
+    background-color: #3f3025;
+    color: #fbfbfb;
+    border: 1px solid #fbfbfb;
+}
+
+@media screen and (max-width: 1200px){
+    body{
+        background-attachment:inherit;
+        background-size:auto;
+        background-attachment: fixed;
+        background-position:initial;
+    }
+}

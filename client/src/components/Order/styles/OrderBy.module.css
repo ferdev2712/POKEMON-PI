@@ -1,0 +1,11 @@
+.orderSelect{
+    background-color: #f8ec99;
+    font-size: 15px;
+    width: 100px;
+    height: 30px;
+    border-radius: 5px;
+    border: 1px inset #3f3025;
+    cursor: pointer;
+    color: #3f3025;
+}
+

@@ -1,0 +1,10 @@
+.pokemonsContainer{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+}
+
+a{
+    text-decoration: none;
+}

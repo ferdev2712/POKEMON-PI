@@ -1,0 +1,33 @@
+.paginationContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.paginationContainer ul {
+    display: flex;
+}
+
+.paginationLi{
+    list-style: none;
+}
+
+.paginationButton{
+    text-align: center;
+    color: #3f3025;
+    cursor: pointer;
+    background-color: #fbfbfb;
+    border-radius: 6px;
+    border: 1px solid #3f3025;
+    width: 25px;
+    padding: 1px;
+    margin: 3px;
+}
+
+.paginationButton:hover{
+    border: 1px solid #fbfbfb;
+    background-color: #3f3025;
+    color: #f7d346;
+}
