@@ -125,28 +125,27 @@ export default function Form(){
 
         <label className={style.formLabel}>HP:</label>
         {!errors.hp ? null : <p className={style.formError}>{errors.hp}</p>}
-        <input name="hp" onChange={onInputChange} type='float' value={pokemon.hp} className={style.formInput}></input>
+        <input name="hp" onChange={onInputChange} type='number' value={pokemon.hp} className={style.formInput}></input>
 
         <label className={style.formLabel}>ATTACK:</label>
         {!errors.attack ? null : <p className={style.formError}>{errors.attack}</p>}
-        <input name="attack" onChange={onInputChange} type='float' value={pokemon.attack} className={style.formInput}></input>
+        <input name="attack" onChange={onInputChange} type='number' value={pokemon.attack} className={style.formInput}></input>
 
         <label className={style.formLabel}>DEFENSE:</label>
         {!errors.defense ? null : <p className={style.formError}>{errors.defense}</p>}
-        <input name="defense" onChange={onInputChange} type='float' value={pokemon.defense} className={style.formInput}></input>
+        <input name="defense" onChange={onInputChange} type='number' value={pokemon.defense} className={style.formInput}></input>
 
         <label className={style.formLabel}>SPEED:</label>
         {!errors.speed ? null : <p className={style.formError}>{errors.speed}</p>}
-        <input name="speed" onChange={onInputChange} type='float' value={pokemon.speed} className={style.formInput}></input>
+        <input name="speed" onChange={onInputChange} type='number' value={pokemon.speed} className={style.formInput}></input>
 
         <label className={style.formLabel}>HEIGHT:</label>
         {!errors.height ? null : <p className={style.formError}>{errors.height}</p>}
-        <input name="height" onChange={onInputChange} type='float' value={pokemon.height} className={style.formInput}></input>
+        <input name="height" onChange={onInputChange} type='number' value={pokemon.height} className={style.formInput}></input>
 
         <label className={style.formLabel}>WEIGHT:</label>
         {!errors.weight ? null : <p className={style.formError}>{errors.weight}</p>}
-
-        <input name="weight" onChange={onInputChange} type='float' value={pokemon.weight} className={style.formInput}></input>
+        <input name="weight" onChange={onInputChange} type='number' value={pokemon.weight} className={style.formInput}></input>
 
         <select name='select' onChange={handleSelect} className={style.formSelect}>
         <option value='Default' selected disabled>TYPES:</option>

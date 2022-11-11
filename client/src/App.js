@@ -30,7 +30,7 @@ function App() {
         <Route exact path='/'>
           <LandingPage/>
         </Route>
-        <Route path='/home'>
+        <Route exact path='/home'>
           {pokemons.length >= 1 || pokemons.hasOwnProperty('name') ? <Home pokemons={currentPokemons} pokemonsPerPage={pokemonsPerPage} totalPokemons={pokemons.length} paginate={paginate}/> : <Loading/>}
         </Route>
         <Route exact path='/home/page/:num'>
@@ -39,7 +39,7 @@ function App() {
         <Route exact path='/form'>
           <Form/>
         </Route>
-        <Route exact path='/:id'>
+        <Route exact path='pokemons/:id'>
           <PokemonDetails/>
         </Route>
       </Switch>
