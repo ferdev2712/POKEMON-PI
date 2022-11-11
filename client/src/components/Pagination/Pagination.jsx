@@ -13,7 +13,7 @@ export default function Pagination({pokemonsPerPage,totalPokemons, paginate}){
         <ul>
             {pageNumbers.map(number=>(
                 <li key={number} className={style.paginationLi}>
-                    <Link to={`home/page/${number}`}>
+                    <Link to={`/home/page/${number}`}>
                         <button className={style.paginationButton} onClick={()=>paginate(number)}>{number}</button>
                     </Link>
                 </li>
