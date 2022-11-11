@@ -39,7 +39,7 @@ function App() {
         <Route exact path='/form'>
           <Form/>
         </Route>
-        <Route exact path='pokemons/:id'>
+        <Route exact path='/pokemons/:id'>
           <PokemonDetails/>
         </Route>
       </Switch>
